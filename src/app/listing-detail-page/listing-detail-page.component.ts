@@ -21,7 +21,6 @@ export class ListingDetailPageComponent{
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    console.log(id);
     this.listing = fakeListings.find(listing => listing.id === id);
   }
 
